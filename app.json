@@ -8,7 +8,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2a9d8f"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,13 +17,29 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.coderhouse.planner",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
-    "android": {
+    "android": {      
+      
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.coderhouse.planner",
+      "versionCode": 1,
+      "permissions": [
+      "ACCESS_FINE_LOCATIONS",
+      "WRITE_EXTERNAL_STORAGE",
+      "READ_CALENDAR",
+      "WRITE_CALENDAR"
+    ],
+    "config": {
+      "googleMaps": {
+        "apiKey":"AIzaSyBqCYbC5APR_-Huz46CShJ8xa2QOEKSFGE"
       }
+    }
     },
     "web": {
       "favicon": "./assets/favicon.png"
